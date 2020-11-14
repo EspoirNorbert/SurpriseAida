@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    position: absolute;
+    z-index: -5;
+    height: 100vh;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(to bottom , #000 , #0008) ,  url('./img/image-12.jpg') ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out background-image;
+    
+    
+}
+#fixed{
+    position:fixed;
+    color: #ffffff;
+    font-size: 5rem;
+    right: 15px;
+    top: 50%;
+    left:50%;
+    width: 100%;
+    text-transform:uppercase;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    background-color: rgba(134, 98, 104, 0.562);
+}
+.wrapper-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(44, 36, 36, 0.219);
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  bottom: 0px;
+ text-align: center;
+ text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+}
+.wrapper-message{
+    padding: 10px;
+    font-size: 2rem;
+    float: left;
+}
+.wrapper-message , .wrapper-count{
+    width: 50%;
+ 
+}
+.wrapper-count{
+    font-size: 10em;
+}
+.wrapper-new-message , .wrapper-new-list,.wrapper-x{
+    display: inline-block;
+    width: 25%; 
+    margin-right: 5%;
+    margin-right: 4%;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15pt;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+.wrapper-new-message p , .wrapper-new-list p,.wrapper-x p{
+    text-align: center;
+    background-color: rgba(134, 98, 104, 0.562);
+}
+h2{
+    color: #333;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid pink;
+}
+
+li{
+    list-style: none;
+    border-color: white;
+    background-color: rgba(134, 98, 104, 0.562);
+
+}
+@media only screen and (max-width: 1200px) {
+
+    .wrapper-content{
+        display: block;
+        overflow: visible;
+        overflow-x: hidden;
+        
+    }
+    .wrapper-new-message , .wrapper-new-list,.wrapper-x{
+        display: block;
+        width: 100%; 
+        background-color: rgb(26, 23, 23);
+    }
+    .wrapper-new-message p , .wrapper-new-list p,.wrapper-x p{
+        text-align: center;
+        background-color: rgba(134, 98, 104, 0.562);
+    }
+    #fixed{
+        font-size: 3rem;
+       
+    }
+   
+  }
